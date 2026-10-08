@@ -1,0 +1,955 @@
+/* =====================================================
+   SPIDER-WATCH
+   CRIME & INCIDENT INTELLIGENCE PLATFORM
+   COMPLETE MODERN VIOLET THEME
+   ===================================================== */
+
+
+/* =====================================================
+   GLOBAL
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    /* MAIN VIOLET BACKGROUND */
+    background: linear-gradient(
+        135deg,
+        #ede9fe,
+        #ddd6fe,
+        #e0e7ff
+    );
+
+    color: #1e293b;
+
+    min-height: 100vh;
+
+    padding: 30px;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+
+.container {
+    width: 100%;
+
+    max-width: 1450px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   HEADER
+   DARK VIOLET
+   ===================================================== */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #4c1d95,
+        #6d28d9,
+        #8b5cf6
+    );
+
+    color: white;
+
+    padding: 30px 35px;
+
+    border-radius: 20px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 15px 35px rgba(76, 29, 149, 0.30);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+
+header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    right: -70px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.12);
+}
+
+
+/* Header title */
+
+header h1 {
+    font-size: 34px;
+
+    font-weight: 800;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Header subtitle */
+
+header p {
+    margin-top: 7px;
+
+    color: #ede9fe;
+
+    font-size: 15px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #facc15,
+        #f97316
+    );
+
+    color: white;
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 20px rgba(250, 204, 21, 0.30);
+}
+
+
+/* =====================================================
+   GENERAL HEADINGS
+   ===================================================== */
+
+h1,
+h2,
+h3 {
+    color: #4c1d95;
+}
+
+h2 {
+    margin-bottom: 18px;
+
+    font-size: 24px;
+}
+
+
+/* =====================================================
+   INCIDENT MANAGEMENT
+   CYAN / TURQUOISE SECTION
+   ===================================================== */
+
+.form-section {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #ecfeff
+    );
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #a5f3fc;
+
+    box-shadow:
+        0 10px 30px rgba(14, 116, 144, 0.10);
+
+    margin-bottom: 25px;
+}
+
+.form-section h2 {
+    color: #0e7490;
+}
+
+
+/* =====================================================
+   FORM GRID
+   ===================================================== */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   FORM GROUP
+   ===================================================== */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+}
+
+
+/* =====================================================
+   INPUTS
+   ===================================================== */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border-radius: 10px;
+
+    border: 1px solid #c4b5fd;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.25s ease;
+}
+
+
+/* Input hover */
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #8b5cf6;
+}
+
+
+/* Input focus */
+
+input:focus,
+select:focus,
+textarea:focus {
+    background: #ffffff;
+
+    border-color: #7c3aed;
+
+    box-shadow:
+        0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+
+/* =====================================================
+   CREATE INCIDENT
+   BLUE
+   ===================================================== */
+
+.add-btn,
+.create-btn,
+.create-incident {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb !important;
+
+    color: white !important;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.20);
+}
+
+.add-btn:hover,
+.create-btn:hover,
+.create-incident:hover {
+    background: #1d4ed8 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(37, 99, 235, 0.28);
+}
+
+
+/* =====================================================
+   INCIDENT REPORTS
+   WHITE + VIOLET
+   ===================================================== */
+
+.incident-section {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #ddd6fe;
+
+    box-shadow:
+        0 10px 30px rgba(76, 29, 149, 0.10);
+
+    margin-bottom: 25px;
+}
+
+.incident-section h2 {
+    color: #6d28d9;
+}
+
+
+/* =====================================================
+   SEARCH
+   ===================================================== */
+
+.search-box {
+    width: 100%;
+
+    padding: 14px;
+
+    background: #faf5ff;
+
+    border: 1px solid #d8b4fe;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+
+    color: #1e293b;
+}
+
+.search-box:focus {
+    border-color: #9333ea;
+
+    box-shadow:
+        0 0 0 3px rgba(147, 51, 234, 0.12);
+}
+
+
+/* =====================================================
+   FILTERS
+   ===================================================== */
+
+.filter-section {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.filter-section select {
+    width: 200px;
+}
+
+
+/* =====================================================
+   RESET BUTTON
+   GRAY / SLATE
+   ===================================================== */
+
+button[type="reset"] {
+    background: #64748b !important;
+
+    color: white !important;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+
+    transition: 0.2s;
+}
+
+button[type="reset"]:hover {
+    background: #475569 !important;
+
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   INCIDENT TABLE
+   ===================================================== */
+
+table {
+    width: 100%;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    border: 1px solid #ddd6fe;
+
+    background: white;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+   DARK PURPLE
+   ===================================================== */
+
+thead {
+    background: linear-gradient(
+        135deg,
+        #4c1d95,
+        #6d28d9
+    );
+
+    color: white;
+}
+
+th {
+    padding: 15px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =====================================================
+   TABLE ROWS
+   ===================================================== */
+
+td {
+    padding: 14px 15px;
+
+    border-bottom: 1px solid #ede9fe;
+
+    color: #334155;
+
+    font-size: 14px;
+}
+
+
+/* Alternate rows */
+
+tbody tr:nth-child(even) {
+    background: #faf5ff;
+}
+
+
+/* Hover */
+
+tbody tr:hover {
+    background: #f3e8ff;
+
+    transition: 0.2s;
+}
+
+
+/* =====================================================
+   HIGH SEVERITY
+   RED
+   ===================================================== */
+
+.severity-high {
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    border: 1px solid #fecaca;
+}
+
+
+/* =====================================================
+   MEDIUM SEVERITY
+   ORANGE
+   ===================================================== */
+
+.severity-medium {
+    background: #ffedd5;
+
+    color: #c2410c;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    border: 1px solid #fed7aa;
+}
+
+
+/* =====================================================
+   LOW SEVERITY
+   GREEN
+   ===================================================== */
+
+.severity-low {
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-weight: 700;
+
+    font-size: 12px;
+
+    border: 1px solid #bbf7d0;
+}
+
+
+/* =====================================================
+   RESOLVE BUTTON
+   GREEN
+   ===================================================== */
+
+.resolve-btn,
+.resolve-button {
+    background: #16a34a !important;
+
+    color: white !important;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+
+    transition: all 0.2s ease;
+}
+
+.resolve-btn:hover,
+.resolve-button:hover {
+    background: #15803d !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(22, 163, 74, 0.25);
+}
+
+
+/* =====================================================
+   REOPEN BUTTON
+   PURPLE
+   ===================================================== */
+
+.reopen-btn,
+.reopen-button {
+    background: #7c3aed !important;
+
+    color: white !important;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    margin-right: 5px;
+
+    transition: all 0.2s ease;
+}
+
+.reopen-btn:hover,
+.reopen-button:hover {
+    background: #6d28d9 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(124, 58, 237, 0.25);
+}
+
+
+/* =====================================================
+   DELETE BUTTON
+   RED
+   ===================================================== */
+
+.delete-btn,
+.delete-button {
+    background: #ef4444 !important;
+
+    color: white !important;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover,
+.delete-button:hover {
+    background: #dc2626 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(239, 68, 68, 0.25);
+}
+
+
+/* =====================================================
+   CANCEL BUTTON
+   ORANGE
+   ===================================================== */
+
+.cancel-btn,
+.cancel-button {
+    background: #f59e0b !important;
+
+    color: white !important;
+
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 8px 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.cancel-btn:hover,
+.cancel-button:hover {
+    background: #d97706 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 12px rgba(245, 158, 11, 0.25);
+}
+
+
+/* =====================================================
+   ACTION BUTTON PRESS EFFECT
+   ===================================================== */
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* =====================================================
+   LIVE INCIDENT MAP
+   VIOLET / BLUE
+   ===================================================== */
+
+.map-section {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #c4b5fd;
+
+    box-shadow:
+        0 10px 30px rgba(76, 29, 149, 0.10);
+
+    margin-bottom: 25px;
+}
+
+.map-section h2 {
+    color: #6d28d9;
+}
+
+
+/* Leaflet map */
+
+#map,
+.map {
+    width: 100%;
+
+    height: 450px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+        135deg,
+        #ddd6fe,
+        #c7d2fe
+    );
+
+    border: 2px solid #a78bfa;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 20px rgba(109, 40, 217, 0.15);
+}
+
+
+/* =====================================================
+   RISK ANALYSIS
+   PURPLE
+   ===================================================== */
+
+.risk-analysis {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #faf5ff
+    );
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid #d8b4fe;
+
+    box-shadow:
+        0 10px 30px rgba(124, 58, 237, 0.10);
+
+    margin-bottom: 25px;
+}
+
+.risk-analysis h2 {
+    color: #7c3aed;
+}
+
+
+/* =====================================================
+   HIGH RISK AREA
+   ORANGE
+   ===================================================== */
+
+.high-risk {
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #ffedd5
+    );
+
+    border-left: 6px solid #f97316;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    color: #9a3412;
+}
+
+
+/* =====================================================
+   INSIGHT CARD
+   CYAN
+   ===================================================== */
+
+.insight {
+    background: linear-gradient(
+        135deg,
+        #ecfeff,
+        #cffafe
+    );
+
+    border: 1px solid #67e8f9;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    color: #155e75;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(8, 145, 178, 0.08);
+}
+
+.insight h2 {
+    color: #0e7490;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.70);
+
+    color: #475569;
+
+    border-radius: 15px;
+
+    border: 1px solid #c4b5fd;
+
+    margin-top: 25px;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-section {
+        flex-direction: column;
+    }
+
+    .filter-section select {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+    }
+
+    #map,
+    .map {
+        height: 400px;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .form-section,
+    .incident-section,
+    .map-section,
+    .risk-analysis {
+        padding: 18px;
+    }
+
+    #map,
+    .map {
+        height: 320px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
